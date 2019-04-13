@@ -1,10 +1,10 @@
-def my_each(array) # put argument(s) here
+def my_each(arr) # put argument(s) here
   # code here
-  i = 0
-  while i < array.size
-    block_given? # optional
-    yield(array[i]) 
-    i += 1
+  count = 0
+  while count < arr.size
+    block_given? 
+    yield(arr[count]) 
+    count += 1
   end
-array
+arr
 end
