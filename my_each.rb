@@ -1,5 +1,10 @@
-def my_each(array)
-  my_each(array) do |i|
-    puts i
-  end 
+def my_each(array) # put argument(s) here
+  # code here
+  i = 0
+  while i < array.size
+    block_given? # optional
+    yield(array[i]) 
+    i += 1
+  end
+array
 end
